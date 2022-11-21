@@ -26,3 +26,10 @@ make sure to complete the .env with the correct values.
 
 run `node .` for generating the CSV file separate by `|` 
 > Makes funny to me, the most difficult part of this project was to find the best separator for CSV in order to now break the CSV
+
+## TODO
+
+- [ ] add [eslint]() and [prettier]()
+- [ ] add a setup for testing
+- [ ] Write a test hehe :D
+- [ ] Design the roadmap for the video game
