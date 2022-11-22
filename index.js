@@ -27,7 +27,7 @@ const app = async () => {
     const allCreatures = await get(spreadsheetId, SPREADSHEET_NAME.CREATURES);
     const allEquipments = await get(spreadsheetId, SPREADSHEET_NAME.EQUIPMENTS);
     const allLocations = await get(spreadsheetId, SPREADSHEET_NAME.LOCATIONS);
-    const allMugics = await get(spreadsheetId.MUGICS, SPREADSHEET_NAME.MUGICS);
+    const allMugics = await get(spreadsheetId, SPREADSHEET_NAME.MUGICS);
 
     const attacksCSV = generateCSVString(allAttacks);
     const creaturesCSV = generateCSVString(allCreatures);
