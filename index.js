@@ -12,20 +12,22 @@ const CSV_NAMES = {
     EQUIPMENTS: 'chaotic_equipments.csv'
 };
 
-const SPREADSHEET = {
-    ATTACKS: process.env.SPREADSHEET_ATTACKS,
-    LOCATIONS: process.env.SPREADSHEET_LOCATIONS,
-    CREATURES: process.env.SPREADSHEET_CREATURES,
-    MUGICS: process.env.SPREADSHEET_MUGICS,
-    EQUIPMENTS: process.env.SPREADSHEET_EQUIPMENTS
+const spreadsheetId = process.env.SPREADSHEET_ID;
+
+const SPREADSHEET_NAME = {
+    ATTACKS: 'Attacks',
+    LOCATIONS: 'Locations',
+    CREATURES: 'Creatures',
+    MUGICS: 'Mugics',
+    EQUIPMENTS: 'Equipments'
 };
 
 const app = async () => {
-    const allAttacks = await get(SPREADSHEET.ATTACKS);
-    const allCreatures = await get(SPREADSHEET.CREATURES);
-    const allEquipments = await get(SPREADSHEET.EQUIPMENTS);
-    const allLocations = await get(SPREADSHEET.LOCATIONS);
-    const allMugics = await get(SPREADSHEET.MUGICS);
+    const allAttacks = await get(spreadsheetId, SPREADSHEET_NAME.ATTACKS);
+    const allCreatures = await get(spreadsheetId, SPREADSHEET_NAME.CREATURES);
+    const allEquipments = await get(spreadsheetId, SPREADSHEET_NAME.EQUIPMENTS);
+    const allLocations = await get(spreadsheetId, SPREADSHEET_NAME.LOCATIONS);
+    const allMugics = await get(spreadsheetId.MUGICS, SPREADSHEET_NAME.MUGICS);
 
     const attacksCSV = generateCSVString(allAttacks);
     const creaturesCSV = generateCSVString(allCreatures);
