@@ -6,9 +6,16 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "dev": "yarn nodemon"
+    "dev": "yarn nodemon",
+    "lint": "eslint ./**/*.js",
+    "lint:fix": "eslint --fix ./**/*.js"
   },
   "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
     "nodemon": "^2.0.20"
   },
   "dependencies": {
