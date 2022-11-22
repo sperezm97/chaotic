@@ -5,31 +5,25 @@ I'm a passionate person who loves Chaotic anime and card trading game. This is t
 
 It's a fun project to polish many skills in video game development, I hope it will be very funny and interesting.
 
+**spoiler** it will be change a lot in the meantime.
+
+## Features
+
+- Generate .CSV based on my spreadheet link on my account.
 
 ## Installation
 
-run `yarn install`
+Run `yarn install`
 
-make sure to complete the .env with the correct values.
+Make sure to complete the `.env` with the correct values.
 
 ```
-    SPREADSHEET_ATTACKS=
-    SPREADSHEET_CREATURES=
-    SPREADSHEET_LOCATIONS=
-    SPREADSHEET_MUGICS=
-    SPREADSHEET_EQUIPMENTS=
-
-    GOOGLE_SPREADSHEET_API_KEY=
+    SPREADSHEET_ATTACKS=1yXFijC2hN1vybU3ejdINYoTOTG62qCkpPLPsiYUEEyo
+    SPREADSHEET_CREATURES=15QPS08iq6pkyMFsYuDsKIXX8LQmQ8MUoJeeNtjU54Xo
+    SPREADSHEET_LOCATIONS=1fUFYhG1NLLkSTzrdbevm6ZMKNP6xLiKUZvM1sY10pVI
+    SPREADSHEET_MUGICS=1rOMFKnWaz6XmhD43YFpcemWGzEok9IgtKCoiPMwA35s
+    SPREADSHEET_EQUIPMENTS=1UUEPAEHZwmH52AJj2Jtskf6d4z5XIFEBb3HT-FTAcgs
 ```
 
-> `GOOGLE_API_KEY` will provide by this [guide](https://theoephraim.github.io/node-google-spreadsheet/#/getting-started/authentication?id=api-key)
-
-run `node .` for generating the CSV file separate by `|` 
+Run `node .` for generating the CSV file separate by `|` 
 > Makes funny to me, the most difficult part of this project was to find the best separator for CSV in order to now break the CSV
-
-## TODO
-
-- [x] add [eslint]() and [prettier]()
-- [ ] add a setup for testing
-- [ ] Write a test hehe :D
-- [ ] Design the roadmap for the video game
