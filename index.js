@@ -2,7 +2,7 @@ import { config } from "dotenv";
 config()
 
 import {get} from './src/api/client.js'
-import {generateCSVString,writeCSVFile } from './src/helpers/csv'
+import {generateCSVString,writeCSVFile } from './src/helpers/csv.js'
 
 const CSV_NAMES = {
     ATTACKS: 'chaotic_attacks.csv',
@@ -27,7 +27,7 @@ const app = async () => {
     const allEquipments = await get(SPREADSHEET.EQUIPMENTS)
     const allLocations = await get(SPREADSHEET.LOCATIONS)
     const allMugics = await get(SPREADSHEET.MUGICS)
-
+    
     const attacksCSV = generateCSVString(allAttacks)
     const creaturesCSV = generateCSVString(allCreatures)
     const equipmentsCSV = generateCSVString(allEquipments)
