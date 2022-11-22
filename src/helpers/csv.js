@@ -7,7 +7,7 @@ const removeBreakLinesInText = (line) => {
 
 export const generateCSVString = (values) => {
     let csv = '';
-    if (values?.length > 0) {
+    if (values?.length <= 0) {
         throw new Error("there is not data here.")
     }
 
