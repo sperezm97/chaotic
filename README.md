@@ -29,7 +29,7 @@ run `node .` for generating the CSV file separate by `|`
 
 ## TODO
 
-- [ ] add [eslint]() and [prettier]()
+- [x] add [eslint]() and [prettier]()
 - [ ] add a setup for testing
 - [ ] Write a test hehe :D
 - [ ] Design the roadmap for the video game
